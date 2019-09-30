@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins|Questrial&display=swap");
 
 :root {
-    --bg-color: rgb(0, 0, 0);
+    --bg-color: rgb(45, 44, 50);
     --text-color: #fff;
     --background-url: url("../img/background.webp");
     --background-image: linear-gradient(
@@ -44,16 +44,6 @@ body {
 
 /*blur purpose https://www.w3schools.com/howto/howto_css_blurred_background.asp */
 
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .bg-image {
   /* The image used */
   background-image: url("");
@@ -74,7 +64,7 @@ body, html {
 /* Position text in the middle of the page/image */
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgba(0,0,0,0); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -514,3 +504,26 @@ div.containerHeader a
     cursor: pointer;
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    font-weight:700;
+    font-display:auto;
+    font-family:monospace,monospace
+}
+
+.logo img{height:44px}
+
+.logo__mark{margin-right:5px}
+
+.logo__text{font-size:1.125rem}
+
+.logo__cursor{display:inline-block;
+    width:10px;
+    height:1rem;
+    background:#fe5186;
+    margin-left:5px;
+    border-radius:1px;
+    animation:cursor 1s infinite
+}@media(prefers-reduced-motion:reduce){.logo__cursor{animation:none}}@keyframes cursor{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
